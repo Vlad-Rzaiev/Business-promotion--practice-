@@ -9,5 +9,8 @@
 <symbol id="icon-menu" viewBox="0 0 20 20">
 <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
 </symbol>
+<symbol id="icon-play" viewBox="0 0 27 32">
+<path fill="#02897a" style="fill: var(--color1, #02897a)" d="M25.976 14.68c1.205 0.692 1.205 2.43 0 3.122l-22.46 12.892c-1.2 0.689-2.696-0.178-2.696-1.561v-25.783c0-1.384 1.496-2.25 2.696-1.561l22.46 12.891z"></path>
+</symbol>
 </defs>
 </svg>
