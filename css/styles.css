@@ -1,7 +1,12 @@
+/*============================== COMMON STYLES ==============================*/
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
   color: #22343d;
+}
+
+input {
+  font-family: inherit;
 }
 
 h1,
@@ -11,5 +16,87 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.container {
+  /* max-width: 1150px; */
+  max-width: 410px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*============================== /COMMON STYLES ==============================*/
+
+/*============================== HEADER STYLES ==============================*/
+.menu-list,
+.header-login-btns {
+  display: none;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header {
+  box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.page-logo-icon {
+  margin-right: 8px;
+}
+
+.page-logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93333;
+  color: #173a56;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.mobile-menu-btn {
+  padding: 0;
+  width: 28px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+}
+/*============================== /HEADER STYLES ==============================*/
