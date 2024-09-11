@@ -51,9 +51,14 @@ textarea {
 .container {
   /* max-width: 1150px; */
   max-width: 410px;
-  padding: 50px 20px;
+  padding: 0 20px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.section-paddings {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /*============================== /COMMON STYLES ==============================*/
 
@@ -166,3 +171,7 @@ textarea {
   margin-right: 4px;
 }
 /*============================== /HERO STYLES ==============================*/
+
+/*============================== PRODUCT STYLES ==============================*/
+
+/*============================== /PRODUCT STYLES ==============================*/
