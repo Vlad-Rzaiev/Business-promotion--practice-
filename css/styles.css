@@ -173,5 +173,49 @@ textarea {
 /*============================== /HERO STYLES ==============================*/
 
 /*============================== PRODUCT STYLES ==============================*/
+.product-list-main-title {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
+.product-list {
+  max-width: 240px;
+  margin: 0 auto 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.product-icon {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.product-title {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.product-text {
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+}
+
+.product-btn {
+  display: block;
+  margin: 0 auto 38px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #02897a;
+}
 /*============================== /PRODUCT STYLES ==============================*/
