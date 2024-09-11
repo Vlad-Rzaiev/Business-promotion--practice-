@@ -51,7 +51,7 @@ textarea {
 .container {
   /* max-width: 1150px; */
   max-width: 410px;
-  padding: 0 20px;
+  padding: 0 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -59,6 +59,19 @@ textarea {
 .section-paddings {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*============================== /COMMON STYLES ==============================*/
 
@@ -221,19 +234,6 @@ textarea {
 /*============================== /PRODUCT STYLES ==============================*/
 
 /*============================== BENEFITS STYLES ==============================*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .benefits-list {
   display: flex;
   flex-direction: column;
