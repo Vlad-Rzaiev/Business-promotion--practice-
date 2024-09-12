@@ -238,9 +238,52 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  max-width: 334px;
+  margin: 0 auto;
 }
 
 .benefits-img {
-  margin: 0 auto;
+  margin: 0 auto 50px;
+}
+
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.benefits-big-title {
+  font-weight: 700;
+  font-size: 32px;
+  display: block;
+  margin: 8px 0 16px;
+}
+
+.benefits-text {
+  font-size: 16px;
+  line-height: 1.63;
+  margin-bottom: 16px;
+}
+
+.management-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.management-item {
+  height: 90px;
+  overflow: auto;
+}
+
+.management-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.63;
+  margin-bottom: 12px;
+}
+
+.management-text {
+  font-size: 16px;
+  line-height: 1.63;
 }
 /*============================== /BENEFITS STYLES ==============================*/
