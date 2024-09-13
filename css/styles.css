@@ -165,7 +165,8 @@ textarea {
 
 .hero-btn-list {
   display: flex;
-  gap: 28px;
+  gap: 16px;
+  justify-content: space-evenly;
   align-items: baseline;
   max-width: 345px;
   margin-right: auto;
@@ -409,3 +410,50 @@ textarea {
   background-color: #028910;
 }
 /*========================== /PROCESS SECTION STYLES ===========================*/
+
+/*========================== STRATEGIES SECTION STYLES ===========================*/
+.strategies-main-title {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.strategies-main-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.strategies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.strategies-img {
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 20px;
+}
+
+.img-caption {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.img-caption-bold {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.strategies-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  max-width: 294px;
+}
+
+.green-title {
+  color: #02897a;
+}
+/*========================== /STRATEGIES SECTION STYLES ===========================*/
