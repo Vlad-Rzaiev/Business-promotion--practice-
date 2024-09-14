@@ -457,3 +457,20 @@ textarea {
   color: #02897a;
 }
 /*========================== /STRATEGIES SECTION STYLES ===========================*/
+
+/*======================= PRICE SECTION STYLES ========================*/
+.price-main-text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.price-list {
+  max-width: 322px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/*======================= /PRICE SECTION STYLES ========================*/
