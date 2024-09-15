@@ -110,8 +110,12 @@ textarea {
   color: #173a56;
   display: inline-flex;
   align-items: center;
-  padding-top: 21px;
-  padding-bottom: 21px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-logo {
+    padding: 21px 0;
+  }
 }
 
 .mobile-menu-btn {
@@ -472,5 +476,120 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.price-item {
+  padding: 24px 0 32px 0;
+}
+
+.price-item:nth-child(odd) {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.price-item:nth-child(even) {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #02897a;
+  color: #ffffff;
+}
+
+.price-list-type-title {
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.price-list-type-text {
+  font-size: 16px;
+  line-height: 2.5;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.price-list-price-title {
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-item:nth-child(odd) .price-list-price-title {
+  color: #afafaf;
+}
+
+.price-item:nth-child(even) .price-list-price-title {
+  color: #e0e0e0;
+}
+
+.price-item:nth-child(odd) .price-color {
+  color: #02897a;
+}
+
+.price-item:nth-child(even) .price-color {
+  color: #ffffff;
+}
+
+.price-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.number-size {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.32;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.price-currency {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+}
+
+.price-sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto 38px auto;
+}
+
+.price-sub-item {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.price-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: inherit;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  min-width: 139px;
+  height: 44px;
+  border: none;
+}
+
+.price-item:nth-child(odd) .price-btn {
+  background-color: #02897a;
+  color: #ffffff;
+}
+
+.price-item:nth-child(even) .price-btn {
+  background-color: #ffffff;
+  color: #02897a;
 }
 /*======================= /PRICE SECTION STYLES ========================*/
