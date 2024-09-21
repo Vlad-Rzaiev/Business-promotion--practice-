@@ -81,6 +81,8 @@ textarea {
 }
 /*============================== /COMMON STYLES ==============================*/
 
+/*============================== MOBILE STYLES ==============================*/
+
 /*============================== HEADER STYLES ==============================*/
 .menu-list,
 .header-login-btns {
@@ -127,7 +129,7 @@ textarea {
   align-items: center;
   border: none;
   background-color: inherit;
-  transition: fill 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: fill 1200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .mobile-menu-btn:hover,
@@ -185,7 +187,7 @@ textarea {
   border: none;
   border-radius: 4px;
   background-color: #02897a;
-  transition: background-color 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .get-started-btn:hover,
@@ -204,8 +206,8 @@ textarea {
   padding: 15px 6px;
   border-radius: 4px;
   border: none;
-  transition: background-color 300ms cubic-bezier(0.19, 1, 0.22, 1),
-    color 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .watch-video-btn:hover,
@@ -216,7 +218,7 @@ textarea {
 
 .watch-video-icon {
   fill: #02897a;
-  transition: fill 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: fill 1200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .watch-video-btn:hover .watch-video-icon,
@@ -271,7 +273,7 @@ textarea {
   border: none;
   border-radius: 4px;
   background-color: #02897a;
-  transition: background-color 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .product-btn:hover,
@@ -406,7 +408,7 @@ textarea {
   background-color: #02897a;
   display: block;
   margin: 0 auto;
-  transition: background-color 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .process-btn:hover,
@@ -581,15 +583,55 @@ textarea {
   min-width: 139px;
   height: 44px;
   border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .price-item:nth-child(odd) .price-btn {
   background-color: #02897a;
   color: #ffffff;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    border 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.price-item:nth-child(odd) .price-btn:hover,
+.price-item:nth-child(odd) .price-btn:focus {
+  background-color: #f8f5f5;
+  border: 1px solid #02897a;
+  color: #02897a;
 }
 
 .price-item:nth-child(even) .price-btn {
   background-color: #ffffff;
   color: #02897a;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.price-item:nth-child(even) .price-btn:hover,
+.price-item:nth-child(even) .price-btn:focus {
+  background-color: #028910;
+  color: #ffffff;
 }
 /*======================= /PRICE SECTION STYLES ========================*/
+
+/*========================== REVIEW SECTION ==========================*/
+.review-text {
+}
+.review-list {
+}
+.review-item {
+}
+.review-icon {
+}
+.review-list-text {
+}
+.review-img {
+}
+.review-name-title {
+}
+.review-name-text {
+}
+/*========================== /REVIEW SECTION ==========================*/
+
+/*============================== /MOBILE STYLES ==============================*/
