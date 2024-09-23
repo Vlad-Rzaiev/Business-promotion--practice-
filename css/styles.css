@@ -49,11 +49,9 @@ textarea {
 }
 
 .container {
-  /* max-width: 1150px; */
-  max-width: 410px;
+  max-width: 411px;
   padding: 0 25px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .section-paddings {
@@ -78,6 +76,7 @@ textarea {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
+  margin-bottom: 104px;
 }
 /*============================== /COMMON STYLES ==============================*/
 
@@ -101,11 +100,11 @@ textarea {
   box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
-.page-logo-icon {
+.header-logo-icon {
   margin-right: 8px;
 }
 
-.page-logo {
+.header-logo {
   font-weight: 700;
   font-size: 30px;
   line-height: 0.93;
@@ -115,7 +114,7 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .page-logo {
+  .header-logo {
     padding: 21px 0;
   }
 }
@@ -678,5 +677,188 @@ textarea {
   color: #252b42;
 }
 /*========================== /REVIEW SECTION ==========================*/
+
+/*========================== JOIN SECTION ==========================*/
+.join-container {
+  background-color: #02897a;
+  border-radius: 32px;
+  max-width: 371px;
+  padding: 0;
+}
+
+.join-title {
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  padding-top: 17px;
+  max-width: 328px;
+  margin: 0 auto 104px;
+}
+
+.join-btn {
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  min-width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+  margin-bottom: 32px;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+  background-color: #028910;
+  color: #ffffff;
+}
+
+.join-img {
+  margin: 0 auto;
+  box-shadow: 0 4px 31px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+}
+/*========================== /JOIN SECTION ==========================*/
+
+/*========================== FOOTER ==========================*/
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.footer-logo-icon {
+  margin-right: 16px;
+}
+
+.footer-sm-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  margin-bottom: 32px;
+}
+
+.footer-sm-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #edfffc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-sm-icons {
+  fill: none;
+  stroke: #111111;
+  transition: stroke 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-sm-link:hover .footer-sm-icons,
+.footer-sm-link:focus .footer-sm-icons {
+  stroke: #02897a;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-menu-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.footer-menu-link {
+  font-size: 16px;
+  line-height: 2.2;
+  text-align: center;
+  transition: color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #02897a;
+}
+
+.footer-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  margin-bottom: 34px;
+}
+
+.footer-input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #02897a;
+  outline: none;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 325px;
+  height: 48px;
+  display: block;
+  background-color: transparent;
+  padding: 4px 8px;
+  margin: 0 auto 21px;
+  transition: border 250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #111111;
+}
+
+.footer-input:focus {
+  border: 2px solid #02897a;
+}
+
+.footer-submit-btn {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  min-width: 131px;
+  height: 39px;
+  background-color: #02897a;
+  display: block;
+  margin: 0 auto 44px;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    border 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+  background-color: #f8f5f5;
+  border: 1px solid #02897a;
+  color: #02897a;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+}
+
+/*========================== /FOOTER ==========================*/
 
 /*============================== /MOBILE STYLES ==============================*/
