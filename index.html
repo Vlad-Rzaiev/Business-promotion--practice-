@@ -607,18 +607,24 @@
             </ul>
           </li>
         </ul>
-        <form action="" name="footer-form">
-          <label for="email" class="footer-label"
+        <form name="footer-form">
+          <label for="phone" class="footer-label"
             >knowing you're always on the best energy deal.
           </label>
-          <input
-            type="email"
-            id="email"
-            required
-            placeholder="Enter e-mail"
-            class="footer-input"
-          />
-          <button type="submit" class="footer-submit-btn">Sign up Now</button>
+          <div class="pnone-input-wrap">
+            <input
+              class="footer-input"
+              type="tel"
+              id="phone"
+              required
+              placeholder="Enter your phone number"
+              name="user-phone"
+            />
+            <svg class="phone-input-icon" width="18" height="28">
+              <use href="./images/icons.svg#icon-mobile-screen"></use>
+            </svg>
+          </div>
+          <button class="footer-submit-btn" type="submit">Sign up Now</button>
         </form>
         <p class="footer-text">Made With Love By Product All Right Reserved</p>
       </div>
