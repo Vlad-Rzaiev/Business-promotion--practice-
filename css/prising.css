@@ -1,0 +1,784 @@
+/*============================== COMMON STYLES ==============================*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+  color: #22343d;
+}
+
+input {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.container {
+  max-width: 411px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.section-paddings {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 104px;
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    max-width: 1150px;
+    padding: 0 20px;
+  }
+}
+/*============================== /COMMON STYLES ==============================*/
+
+/*============================== HEADER STYLES ==============================*/
+/*============================== MOBILE STYLES ==============================*/
+.page-header {
+  background-color: #ffffff;
+}
+
+.menu-list,
+.header-login-btns {
+  display: none;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header-logo-icon {
+  margin-right: 8px;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1149px) {
+  .header-logo {
+    padding: 21px 0;
+  }
+}
+
+.mobile-menu-btn {
+  padding: 0;
+  width: 28px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  transition: fill 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus {
+  fill: #02897a;
+}
+/*============================== /MOBILE STYLES ==============================*/
+
+/*============================== DESKTOP STYLES ==============================*/
+@media screen and (min-width: 1150px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    margin-right: 237px;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .menu-link {
+    display: block;
+    line-height: 1.75;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    transition: color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #02897a;
+  }
+
+  .current {
+    font-weight: 600;
+  }
+
+  .header-login-btns {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .sign-btn {
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    width: 102px;
+    height: 42px;
+    font-weight: 600;
+    text-align: center;
+    color: #173a56;
+    transition: color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+      background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .sign-btn:hover,
+  .sign-btn:focus {
+    background-color: #02897a;
+    color: #ffffff;
+  }
+
+  .black-mode-btn {
+    border: none;
+    background-color: #ffffff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .black-mode-btn:hover,
+  .black-mode-btn:focus {
+    background-color: #02897a;
+  }
+}
+/*============================== /DESKTOP STYLES ==============================*/
+/*============================== /HEADER STYLES ==============================*/
+
+/*======================= PRICE SECTION STYLES ========================*/
+/*============================== MOBILE ==============================*/
+.price-section {
+  background-color: #ffffff;
+  box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.55);
+  padding-bottom: 100px;
+}
+
+.price-main-title {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.price-main-first-text {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.price-main-second-text {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 352px;
+}
+
+.price-list {
+  max-width: 322px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.price-item {
+  padding: 24px 0 32px 0;
+}
+
+.price-item:nth-child(odd) {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.price-item:nth-child(even) {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #02897a;
+  color: #ffffff;
+}
+
+.price-list-type-title {
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.price-list-type-text {
+  font-size: 16px;
+  line-height: 2.5;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.price-list-price-title {
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-item:nth-child(odd) .price-list-price-title {
+  color: #afafaf;
+}
+
+.price-item:nth-child(even) .price-list-price-title {
+  color: #e0e0e0;
+}
+
+.price-item:nth-child(odd) .price-color {
+  color: #02897a;
+}
+
+.price-item:nth-child(even) .price-color {
+  color: #ffffff;
+}
+
+.price-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.number-size {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.32;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.price-currency {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+}
+
+.price-sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto 38px auto;
+}
+
+.price-sub-item {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.price-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: inherit;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  min-width: 139px;
+  height: 44px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.price-item:nth-child(odd) .price-btn {
+  background-color: #02897a;
+  color: #ffffff;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    border 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.price-item:nth-child(odd) .price-btn:hover,
+.price-item:nth-child(odd) .price-btn:focus {
+  background-color: #f8f5f5;
+  border: 1px solid #02897a;
+  color: #02897a;
+}
+
+.price-item:nth-child(even) .price-btn {
+  background-color: #ffffff;
+  color: #02897a;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.price-item:nth-child(even) .price-btn:hover,
+.price-item:nth-child(even) .price-btn:focus {
+  background-color: #028910;
+  color: #ffffff;
+}
+/*============================== /MOBILE ==============================*/
+
+/*============================== DESKTOP ==============================*/
+@media screen and (min-width: 1150px) {
+  .price-section {
+    padding-bottom: 150px;
+  }
+
+  .price-main-title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .price-main-first-text {
+    margin-bottom: 16px;
+  }
+
+  .price-main-second-text {
+    max-width: 536px;
+    margin: 0 auto 50px;
+  }
+
+  .price-list {
+    max-width: 100%;
+    flex-direction: row;
+    column-gap: 72px;
+    flex-wrap: wrap;
+  }
+
+  .price-item {
+    width: calc((100% - 144px) / 3);
+  }
+}
+/*============================== /DESKTOP ==============================*/
+/*======================= /PRICE SECTION STYLES ========================*/
+
+/*========================== ENTERPRISE SECTION ==========================*/
+/*============================== MOBILE ==============================*/
+.enterprise-title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.enterprise-main-text {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  max-width: 335px;
+  margin: 0 auto 25px;
+}
+
+.enterprise-dash {
+  display: none;
+}
+
+.enterprise-submain-text {
+  font-size: 18px;
+  text-align: center;
+  max-width: 338px;
+  margin: 0 auto 32px;
+}
+
+.enterprise-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #02897a;
+  border-radius: 8px;
+  min-width: 224px;
+  padding: 12px 18px;
+  background-color: #ffffff;
+  border: 1px solid #bcd0e5;
+  display: block;
+  margin: 0 auto 46px;
+  transition: color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.enterprise-btn:hover,
+.enterprise-btn:focus {
+  background-color: #02897a;
+  color: #ffffff;
+}
+/*============================== /MOBILE ==============================*/
+
+/*============================== DESKTOP ==============================*/
+.enterprise-title {
+  margin-bottom: 16px;
+}
+
+.enterprise-main-text {
+  font-size: 34px;
+  max-width: 810px;
+  margin-bottom: 8px;
+}
+
+.enterprise-dash {
+  display: inline;
+}
+
+.enterprise-submain-text {
+  max-width: 657px;
+}
+
+.enterprise-btn {
+  margin-bottom: 62px;
+}
+/*============================== /DESKTOP ==============================*/
+/*========================= /ENTERPRISE SECTION =========================*/
+
+/*========================== JOIN SECTION ==========================*/
+/*============================== MOBILE ==============================*/
+.join-container {
+  background-color: #02897a;
+  border-radius: 32px;
+  max-width: 371px;
+  padding: 0;
+}
+
+.join-title {
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  padding-top: 17px;
+  max-width: 328px;
+  margin: 0 auto 104px;
+}
+
+.join-btn {
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  min-width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+  margin-bottom: 32px;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+  background-color: #028910;
+  color: #ffffff;
+}
+
+.join-img {
+  margin: 0 auto;
+  box-shadow: 0 4px 31px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+}
+/*============================== /MOBILE ==============================*/
+
+/*============================== DESKTOP ==============================*/
+@media screen and (min-width: 1150px) {
+  .join-container {
+    max-width: 968px;
+    display: flex;
+    column-gap: 10px;
+  }
+
+  .join-title-wrap {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .join-title {
+    padding: 0;
+    max-width: 510px;
+    text-align: left;
+    margin-bottom: 46px;
+  }
+
+  .join-btn {
+    margin: 0;
+  }
+
+  .join-img {
+    padding-bottom: 10px;
+  }
+}
+/*============================== /DESKTOP ==============================*/
+/*========================== /JOIN SECTION ==========================*/
+
+/*========================== FOOTER ==========================*/
+/*============================== MOBILE ==============================*/
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.footer-logo-icon {
+  margin-right: 16px;
+}
+
+.footer-sm-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  margin-bottom: 32px;
+}
+
+.footer-sm-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #edfffc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-sm-icons {
+  fill: none;
+  stroke: #111111;
+  transition: stroke 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-sm-link:hover .footer-sm-icons,
+.footer-sm-link:focus .footer-sm-icons {
+  stroke: #02897a;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-menu-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.footer-menu-link {
+  font-size: 16px;
+  line-height: 2.2;
+  text-align: center;
+  transition: color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #02897a;
+}
+
+.footer-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  margin-bottom: 34px;
+}
+
+.pnone-input-wrap {
+  position: relative;
+  width: 325px;
+  margin: 0 auto 21px;
+}
+
+.footer-input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #02897a;
+  outline: none;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 100%;
+  height: 48px;
+  display: block;
+  background-color: transparent;
+  padding-left: 42px;
+  transition: border 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-input::placeholder {
+  line-height: 1.75;
+  color: #02897a;
+}
+
+.footer-input:focus {
+  border: 1px solid #02897a;
+}
+
+.phone-input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  fill: #bcd0e5;
+  transition: fill 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-input:focus + .phone-input-icon {
+  fill: #02897a;
+}
+
+.footer-submit-btn {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #02897a;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  min-width: 131px;
+  height: 39px;
+  background-color: #ffffff;
+  display: block;
+  margin: 0 auto 44px;
+  transition: background-color 1200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+  background-color: #02897a;
+  color: #ffffff;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+}
+/*============================== /MOBILE ==============================*/
+
+/*============================== DESKTOP ==============================*/
+@media screen and (min-width: 1150px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    margin-bottom: 18px;
+  }
+
+  .footer-sm-list {
+    max-width: 152px;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .footer-menu-list {
+    flex-direction: row;
+    align-items: start;
+    column-gap: 129px;
+    margin: 0;
+  }
+
+  .footer-form {
+    max-width: 325px;
+  }
+
+  .pnone-input-wrap {
+    margin-bottom: 25px;
+  }
+
+  .footer-label {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  .footer-submit-btn {
+    margin: 0;
+  }
+}
+
+/*============================== /DESKTOP ==============================*/
+/*========================== /FOOTER ==========================*/
