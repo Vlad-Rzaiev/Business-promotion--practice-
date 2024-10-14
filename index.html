@@ -8,17 +8,17 @@
     <link
       rel="icon"
       type="image/png"
-      href="./favicon/favicon-48x48.png"
+      href="./images/favicon/favicon-48x48.png"
       sizes="48x48"
     />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
+      href="./images/favicon/apple-touch-icon.png"
     />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
 
     <link
       rel="stylesheet"
@@ -80,7 +80,7 @@
           </li>
         </ul>
 
-        <button class="mobile-menu-btn" type="button">
+        <button class="mobile-menu-btn" type="button" data-menu-open>
           <svg class="mobile-menu-icon" width="28" height="31">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -562,6 +562,7 @@
       </section>
     </main>
 
+    <!-- FOOTER PAGE -->
     <footer class="section-paddings">
       <div class="container">
         <div class="footer-container">
@@ -649,5 +650,68 @@
         <p class="footer-text">Made With Love By Product All Right Reserved</p>
       </div>
     </footer>
+
+    <!-- PHONE MENU -->
+    <div class="menu-backdrop" data-menu>
+      <div class="mobile-menu">
+        <button class="mobile-close-btn" type="button" data-menu-close>
+          <svg class="mobile-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link current" href="./index.html">Product</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="./pages/prising.html">Pricing</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="./pages/customers.html"
+              >Customers</a
+            >
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="./pages/resources.html"
+              >Resources</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-sm-list">
+          <li class="mobile-sm-item">
+            <a
+              class="mobile-sm-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg class="mobile-sm-icons" width="40" height="40">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-sm-item">
+            <a
+              class="mobile-sm-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <svg class="mobile-sm-icons" width="40" height="40">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-sm-item">
+            <a class="mobile-sm-link" href="https://x.com/" target="_blank">
+              <svg class="mobile-sm-icons" width="40" height="40">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MENU SCRIPT -->
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
