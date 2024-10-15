@@ -84,7 +84,7 @@
           </li>
         </ul>
 
-        <button class="mobile-menu-btn" type="button">
+        <button class="mobile-menu-btn" type="button" data-menu-open>
           <svg class="mobile-menu-icon" width="28" height="31">
             <use href="../images/icons.svg#icon-menu"></use>
           </svg>
@@ -160,7 +160,7 @@
         </div>
       </section>
 
-      <!-- ENTERPRISE -->
+      <!-- ENTERPRISE SECTION -->
       <section class="section-paddings">
         <div class="container">
           <h2 class="enterprise-title">enterpise</h2>
@@ -175,6 +175,47 @@
           <button class="enterprise-btn" type="button">
             Get in touch with us
           </button>
+        </div>
+      </section>
+
+      <!-- EFFECTS SECTION -->
+      <section class="section-paddings">
+        <div class="container">
+          <h2 class="effects-title">
+            Product is being used with great effects alongside:
+          </h2>
+          <div class="effects-img-list-wrap">
+            <img
+              class="effects-img"
+              src="../images/prising/effects-img.svg"
+              alt="fun people"
+              width="352"
+              height="288"
+            />
+            <ul class="effects-list">
+              <li class="effects-item">
+                <h3 class="effects-list-title">Enterpreneur</h3>
+                <p class="effects-list-text">
+                  Product is a great way to help medium and samall enterprise
+                  owners achieve their goals
+                </p>
+              </li>
+              <li class="effects-item">
+                <h3 class="effects-list-title">Accountants</h3>
+                <p class="effects-list-text">
+                  Whether you are working on contract with clients, or on other
+                  key accounting documents, Product is for you
+                </p>
+              </li>
+              <li class="effects-item">
+                <h3 class="effects-list-title">Universities</h3>
+                <p class="effects-list-text">
+                  Organize university projects and have documents easily graded
+                  online with Product
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -286,5 +327,64 @@
         <p class="footer-text">Made With Love By Product All Right Reserved</p>
       </div>
     </footer>
+
+    <!-- PHONE MENU -->
+    <div class="menu-backdrop" data-menu>
+      <div class="mobile-menu">
+        <button class="mobile-close-btn" type="button" data-menu-close>
+          <svg class="mobile-close-icon" width="40" height="40">
+            <use href="../images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="../index.html">Product</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link current" href="./prising.html">Pricing</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="./customers.html">Customers</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="./resources.html">Resources</a>
+          </li>
+        </ul>
+        <ul class="mobile-sm-list">
+          <li class="mobile-sm-item">
+            <a
+              class="mobile-sm-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg class="mobile-sm-icons" width="40" height="40">
+                <use href="../images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-sm-item">
+            <a
+              class="mobile-sm-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <svg class="mobile-sm-icons" width="40" height="40">
+                <use href="../images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-sm-item">
+            <a class="mobile-sm-link" href="https://x.com/" target="_blank">
+              <svg class="mobile-sm-icons" width="40" height="40">
+                <use href="../images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MENU SCRIPT -->
+    <script src="../js/menu.js" type="module"></script>
   </body>
 </html>

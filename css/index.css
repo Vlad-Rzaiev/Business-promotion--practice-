@@ -1470,4 +1470,10 @@ textarea {
   background-color: #ffffff;
   border: 3px solid #02897a;
 }
+
+@media screen and (min-width: 1158px) {
+  .menu-backdrop {
+    display: none;
+  }
+}
 /*========================== /MOBILE MENU =====================*/
